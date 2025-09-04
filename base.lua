@@ -292,4 +292,52 @@ function iYannStore:CreateWindow(settings)
     return window
 end
 
+-- Auto-execute ketika script di-load
+local Window = iYannStore:CreateWindow({
+    Name = "iYann Store"
+})
+
+local MainTab = Window:CreateTab("Main")
+local PlayerTab = Window:CreateTab("Player")
+
+-- Contoh button
+MainTab:CreateButton({
+    Name = "Print Hello",
+    Callback = function()
+        print("Hello from iYann Store!")
+    end
+})
+
+-- Contoh toggle
+MainTab:CreateToggle({
+    Name = "Auto Farm",
+    CurrentValue = false,
+    Callback = function(value)
+        print("Auto Farm:", value)
+    end
+})
+
+-- Contoh slider
+PlayerTab:CreateSlider({
+    Name = "Walk Speed",
+    Min = 16,
+    Max = 100,
+    CurrentValue = 16,
+    Callback = function(value)
+        print("Walk Speed set to:", value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end
+})
+
+PlayerTab:CreateSlider({
+    Name = "Jump Power",
+    Min = 50,
+    Max = 200,
+    CurrentValue = 50,
+    Callback = function(value)
+        print("Jump Power set to:", value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+    end
+})
+
 return iYannStore
