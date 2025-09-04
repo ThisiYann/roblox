@@ -1,403 +1,295 @@
---[[
+-- iYann Store Simple UI Library
+local iYannStore = {}
 
-	iYann Store
-	Based on Rayfield Interface Suite
+-- Services
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
 
-	shlex  | Designing + Programming
-	iRay   | Programming
-	Max    | Programming
-	Damian | Programming
-
-]]
-
-if debugX then
-	warn('Initialising iYann Store')
-end
-
-local function getService(name)
-	local service = game:GetService(name)
-	return if cloneref then cloneref(service) else service
-end
-
--- Loads and executes a function hosted on a remote URL. Cancels the request if the requested URL takes too long to respond.
--- Errors with the function are caught and logged to the output
-local function loadWithTimeout(url: string, timeout: number?): ...any
-	assert(type(url) == "string", "Expected string, got " .. type(url))
-	timeout = timeout or 5
-	local requestCompleted = false
-	local success, result = false, nil
-
-	local requestThread = task.spawn(function()
-		local fetchSuccess, fetchResult = pcall(game.HttpGet, game, url) -- game:HttpGet(url)
-		-- If the request fails the content can be empty, even if fetchSuccess is true
-		if not fetchSuccess or #fetchResult == 0 then
-			if #fetchResult == 0 then
-				fetchResult = "Empty response" -- Set the error message
-			end
-			success, result = false, fetchResult
-			requestCompleted = true
-			return
-		end
-		local content = fetchResult -- Fetched content
-		local execSuccess, execResult = pcall(function()
-			return loadstring(content)()
-		end)
-		success, result = execSuccess, execResult
-		requestCompleted = true
-	end)
-
-	local timeoutThread = task.delay(timeout, function()
-		if not requestCompleted then
-			warn(`Request for {url} timed out after {timeout} seconds`)
-			task.cancel(requestThread)
-			result = "Request timed out"
-			requestCompleted = true
-		end
-	end)
-
-	-- Wait for completion or timeout
-	while not requestCompleted do
-		task.wait()
-	end
-	-- Cancel timeout thread if still running when request completes
-	if coroutine.status(timeoutThread) ~= "dead" then
-		task.cancel(timeoutThread)
-	end
-	if not success then
-		warn(`Failed to process {url}: {result}`)
-	end
-	return if success then result else nil
-end
-
-local requestsDisabled = true --getgenv and getgenv().DISABLE_RAYFIELD_REQUESTS
-local InterfaceBuild = '3K3W'
-local Release = "Build 1.68"
-local RayfieldFolder = "iYannStore"
-local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
-local settingsTable = {
-	General = {
-		-- if needs be in order just make getSetting(name)
-		rayfieldOpen = {Type = 'bind', Value = 'K', Name = 'iYann Store Keybind'},
-		-- buildwarnings
-		-- rayfieldprompts
-
-	},
-	System = {
-		usageAnalytics = {Type = 'toggle', Value = true, Name = 'Anonymised Analytics'},
-	}
+-- Default Theme
+local Theme = {
+    Background = Color3.fromRGB(25, 25, 25),
+    Topbar = Color3.fromRGB(34, 34, 34),
+    TextColor = Color3.fromRGB(240, 240, 240),
+    ElementBackground = Color3.fromRGB(35, 35, 35),
+    ElementHover = Color3.fromRGB(40, 40, 40),
+    Accent = Color3.fromRGB(0, 146, 214)
 }
 
--- Settings that have been overridden by the developer. These will not be saved to the user's configuration file
--- Overridden settings always take precedence over settings in the configuration file, and are cleared if the user changes the setting in the UI
-local overriddenSettings: { [string]: any } = {} -- For example, overriddenSettings["System.rayfieldOpen"] = "J"
-local function overrideSetting(category: string, name: string, value: any)
-	overriddenSettings[`{category}.{name}`] = value
+-- Create main window
+function iYannStore:CreateWindow(settings)
+    local window = {}
+    window.Name = settings.Name or "iYann Store"
+    
+    -- Create GUI
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "iYannStoreGUI"
+    screenGui.Parent = game:GetService("CoreGui")
+    
+    local mainFrame = Instance.new("Frame")
+    mainFrame.Name = "Main"
+    mainFrame.Size = UDim2.new(0, 400, 0, 300)
+    mainFrame.Position = UDim2.new(0.5, -200, 0.5, -150)
+    mainFrame.BackgroundColor3 = Theme.Background
+    mainFrame.BorderSizePixel = 0
+    mainFrame.Parent = screenGui
+    
+    local topbar = Instance.new("Frame")
+    topbar.Name = "Topbar"
+    topbar.Size = UDim2.new(1, 0, 0, 30)
+    topbar.BackgroundColor3 = Theme.Topbar
+    topbar.BorderSizePixel = 0
+    topbar.Parent = mainFrame
+    
+    local title = Instance.new("TextLabel")
+    title.Name = "Title"
+    title.Text = window.Name
+    title.TextColor3 = Theme.TextColor
+    title.BackgroundTransparency = 1
+    title.Size = UDim2.new(1, -40, 1, 0)
+    title.Position = UDim2.new(0, 10, 0, 0)
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Font = Enum.Font.Gotham
+    title.Parent = topbar
+    
+    local closeButton = Instance.new("TextButton")
+    closeButton.Name = "Close"
+    closeButton.Text = "X"
+    closeButton.TextColor3 = Theme.TextColor
+    closeButton.BackgroundTransparency = 1
+    closeButton.Size = UDim2.new(0, 30, 1, 0)
+    closeButton.Position = UDim2.new(1, -30, 0, 0)
+    closeButton.Font = Enum.Font.GothamBold
+    closeButton.Parent = topbar
+    
+    local tabContainer = Instance.new("Frame")
+    tabContainer.Name = "Tabs"
+    tabContainer.Size = UDim2.new(1, 0, 1, -30)
+    tabContainer.Position = UDim2.new(0, 0, 0, 30)
+    tabContainer.BackgroundTransparency = 1
+    tabContainer.Parent = mainFrame
+    
+    -- Make draggable
+    local dragging = false
+    local dragInput, dragStart, startPos
+    
+    topbar.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            dragging = true
+            dragStart = input.Position
+            startPos = mainFrame.Position
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    topbar.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            local delta = input.Position - dragStart
+            mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end)
+    
+    -- Close button
+    closeButton.MouseButton1Click:Connect(function()
+        screenGui:Destroy()
+    end)
+    
+    -- Tab functions
+    function window:CreateTab(tabName)
+        local tab = {}
+        
+        local tabButton = Instance.new("TextButton")
+        tabButton.Name = tabName
+        tabButton.Text = tabName
+        tabButton.Size = UDim2.new(0, 80, 0, 25)
+        tabButton.Position = UDim2.new(0, (#tabContainer:GetChildren() - 1) * 85, 0, 5)
+        tabButton.BackgroundColor3 = Theme.ElementBackground
+        tabButton.TextColor3 = Theme.TextColor
+        tabButton.BorderSizePixel = 0
+        tabButton.Parent = tabContainer
+        
+        local contentFrame = Instance.new("ScrollingFrame")
+        contentFrame.Name = tabName .. "Content"
+        contentFrame.Size = UDim2.new(1, -10, 1, -40)
+        contentFrame.Position = UDim2.new(0, 5, 0, 35)
+        contentFrame.BackgroundTransparency = 1
+        contentFrame.ScrollBarThickness = 5
+        contentFrame.Visible = false
+        contentFrame.Parent = tabContainer
+        
+        local uiListLayout = Instance.new("UIListLayout")
+        uiListLayout.Padding = UDim.new(0, 5)
+        uiListLayout.Parent = contentFrame
+        
+        -- Show first tab by default
+        if #tabContainer:GetChildren() == 2 then -- First tab
+            contentFrame.Visible = true
+            tabButton.BackgroundColor3 = Theme.Accent
+        end
+        
+        tabButton.MouseButton1Click:Connect(function()
+            -- Hide all content frames
+            for _, child in ipairs(tabContainer:GetChildren()) do
+                if child:IsA("ScrollingFrame") then
+                    child.Visible = false
+                end
+                if child:IsA("TextButton") and child ~= tabButton then
+                    child.BackgroundColor3 = Theme.ElementBackground
+                end
+            end
+            
+            -- Show this tab's content
+            contentFrame.Visible = true
+            tabButton.BackgroundColor3 = Theme.Accent
+        end)
+        
+        -- Button element
+        function tab:CreateButton(buttonSettings)
+            local button = Instance.new("TextButton")
+            button.Name = buttonSettings.Name
+            button.Text = buttonSettings.Name
+            button.Size = UDim2.new(1, -10, 0, 30)
+            button.Position = UDim2.new(0, 5, 0, 0)
+            button.BackgroundColor3 = Theme.ElementBackground
+            button.TextColor3 = Theme.TextColor
+            button.BorderSizePixel = 0
+            button.Parent = contentFrame
+            
+            button.MouseEnter:Connect(function()
+                button.BackgroundColor3 = Theme.ElementHover
+            end)
+            
+            button.MouseLeave:Connect(function()
+                button.BackgroundColor3 = Theme.ElementBackground
+            end)
+            
+            button.MouseButton1Click:Connect(function()
+                pcall(buttonSettings.Callback)
+            end)
+            
+            return button
+        end
+        
+        -- Toggle element
+        function tab:CreateToggle(toggleSettings)
+            local toggleFrame = Instance.new("Frame")
+            toggleFrame.Name = toggleSettings.Name
+            toggleFrame.Size = UDim2.new(1, -10, 0, 30)
+            toggleFrame.BackgroundTransparency = 1
+            toggleFrame.Parent = contentFrame
+            
+            local toggleText = Instance.new("TextLabel")
+            toggleText.Name = "Text"
+            toggleText.Text = toggleSettings.Name
+            toggleText.Size = UDim2.new(0.7, 0, 1, 0)
+            toggleText.TextColor3 = Theme.TextColor
+            toggleText.BackgroundTransparency = 1
+            toggleText.TextXAlignment = Enum.TextXAlignment.Left
+            toggleText.Parent = toggleFrame
+            
+            local toggleButton = Instance.new("TextButton")
+            toggleButton.Name = "Toggle"
+            toggleButton.Text = toggleSettings.CurrentValue and "ON" or "OFF"
+            toggleButton.Size = UDim2.new(0.3, 0, 1, 0)
+            toggleButton.Position = UDim2.new(0.7, 0, 0, 0)
+            toggleButton.BackgroundColor3 = toggleSettings.CurrentValue and Theme.Accent or Theme.ElementBackground
+            toggleButton.TextColor3 = Theme.TextColor
+            toggleButton.BorderSizePixel = 0
+            toggleButton.Parent = toggleFrame
+            
+            toggleButton.MouseButton1Click:Connect(function()
+                toggleSettings.CurrentValue = not toggleSettings.CurrentValue
+                toggleButton.Text = toggleSettings.CurrentValue and "ON" or "OFF"
+                toggleButton.BackgroundColor3 = toggleSettings.CurrentValue and Theme.Accent or Theme.ElementBackground
+                pcall(toggleSettings.Callback, toggleSettings.CurrentValue)
+            end)
+            
+            return toggleFrame
+        end
+        
+        -- Slider element
+        function tab:CreateSlider(sliderSettings)
+            local sliderFrame = Instance.new("Frame")
+            sliderFrame.Name = sliderSettings.Name
+            sliderFrame.Size = UDim2.new(1, -10, 0, 50)
+            sliderFrame.BackgroundTransparency = 1
+            sliderFrame.Parent = contentFrame
+            
+            local sliderText = Instance.new("TextLabel")
+            sliderText.Name = "Text"
+            sliderText.Text = sliderSettings.Name
+            sliderText.Size = UDim2.new(1, 0, 0, 20)
+            sliderText.TextColor3 = Theme.TextColor
+            sliderText.BackgroundTransparency = 1
+            sliderText.TextXAlignment = Enum.TextXAlignment.Left
+            sliderText.Parent = sliderFrame
+            
+            local sliderBar = Instance.new("Frame")
+            sliderBar.Name = "Bar"
+            sliderBar.Size = UDim2.new(1, 0, 0, 10)
+            sliderBar.Position = UDim2.new(0, 0, 0, 25)
+            sliderBar.BackgroundColor3 = Theme.ElementBackground
+            sliderBar.BorderSizePixel = 0
+            sliderBar.Parent = sliderFrame
+            
+            local sliderFill = Instance.new("Frame")
+            sliderFill.Name = "Fill"
+            sliderFill.Size = UDim2.new((sliderSettings.CurrentValue - sliderSettings.Min) / (sliderSettings.Max - sliderSettings.Min), 0, 1, 0)
+            sliderFill.BackgroundColor3 = Theme.Accent
+            sliderFill.BorderSizePixel = 0
+            sliderFill.Parent = sliderBar
+            
+            local sliderValue = Instance.new("TextLabel")
+            sliderValue.Name = "Value"
+            sliderValue.Text = tostring(sliderSettings.CurrentValue)
+            sliderValue.Size = UDim2.new(1, 0, 0, 15)
+            sliderValue.Position = UDim2.new(0, 0, 0, 35)
+            sliderValue.TextColor3 = Theme.TextColor
+            sliderValue.BackgroundTransparency = 1
+            sliderValue.TextXAlignment = Enum.TextXAlignment.Right
+            sliderValue.Parent = sliderFrame
+            
+            local dragging = false
+            sliderBar.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    dragging = true
+                end
+            end)
+            
+            sliderBar.InputEnded:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    dragging = false
+                end
+            end)
+            
+            UserInputService.InputChanged:Connect(function(input)
+                if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+                    local xPos = math.clamp(input.Position.X - sliderBar.AbsolutePosition.X, 0, sliderBar.AbsoluteSize.X)
+                    local value = math.floor(sliderSettings.Min + (xPos / sliderBar.AbsoluteSize.X) * (sliderSettings.Max - sliderSettings.Min))
+                    
+                    sliderFill.Size = UDim2.new(xPos / sliderBar.AbsoluteSize.X, 0, 1, 0)
+                    sliderValue.Text = tostring(value)
+                    pcall(sliderSettings.Callback, value)
+                end
+            end)
+            
+            return sliderFrame
+        end
+        
+        return tab
+    end
+    
+    return window
 end
 
-local function getSetting(category: string, name: string): any
-	if overriddenSettings[`{category}.{name}`] ~= nil then
-		return overriddenSettings[`{category}.{name}`]
-	elseif settingsTable[category][name] ~= nil then
-		return settingsTable[category][name].Value
-	end
-end
-
--- If requests/analytics have been disabled by developer, set the user-facing setting to false as well
-if requestsDisabled then
-	overrideSetting("System", "usageAnalytics", false)
-end
-
-local HttpService = getService('HttpService')
-local RunService = getService('RunService')
-
--- Environment Check
-local useStudio = RunService:IsStudio() or false
-
-local settingsCreated = false
-local settingsInitialized = false -- Whether the UI elements in the settings page have been set to the proper values
-local cachedSettings
-local prompt = useStudio and require(script.Parent.prompt) or loadWithTimeout('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/prompt.lua')
-local requestFunc = (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request) or http_request or request
-
--- Validate prompt loaded correctly
-if not prompt and not useStudio then
-	warn("Failed to load prompt library, using fallback")
-	prompt = {
-		create = function() end -- No-op fallback
-	}
-end
-
-
-
-local function loadSettings()
-	local file = nil
-
-	local success, result =	pcall(function()
-		task.spawn(function()
-			if isfolder and isfolder(RayfieldFolder) then
-				if isfile and isfile(RayfieldFolder..'/settings'..ConfigurationExtension) then
-					file = readfile(RayfieldFolder..'/settings'..ConfigurationExtension)
-				end
-			end
-
-			-- for debug in studio
-			if useStudio then
-				file = [[
-		{"General":{"rayfieldOpen":{"Value":"K","Type":"bind","Name":"iYann Store Keybind","Element":{"HoldToInteract":false,"Ext":true,"Name":"iYann Store Keybind","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"K"}}},"System":{"usageAnalytics":{"Value":false,"Type":"toggle","Name":"Anonymised Analytics","Element":{"Ext":true,"Name":"Anonymised Analytics","Set":null,"CurrentValue":false,"Callback":null}}}}
-	]]
-			end
-
-
-			if file then
-				local success, decodedFile = pcall(function() return HttpService:JSONDecode(file) end)
-				if success then
-					file = decodedFile
-				else
-					file = {}
-				end
-			else
-				file = {}
-			end
-
-
-			if not settingsCreated then 
-				cachedSettings = file
-				return
-			end
-
-			if file ~= {} then
-				for categoryName, settingCategory in pairs(settingsTable) do
-					if file[categoryName] then
-						for settingName, setting in pairs(settingCategory) do
-							if file[categoryName][settingName] then
-								setting.Value = file[categoryName][settingName].Value
-								setting.Element:Set(getSetting(categoryName, settingName))
-							end
-						end
-					end
-				end
-			end
-			settingsInitialized = true
-		end)
-	end)
-
-	if not success then 
-		if writefile then
-			warn('iYann Store had an issue accessing configuration saving capability.')
-		end
-	end
-end
-
-if debugX then
-	warn('Now Loading Settings Configuration')
-end
-
-loadSettings()
-
-if debugX then
-	warn('Settings Loaded')
-end
-
-local analyticsLib
-local sendReport = function(ev_n, sc_n) warn("Failed to load report function") end
-if not requestsDisabled then
-	if debugX then
-		warn('Querying Settings for Reporter Information')
-	end	
-	analyticsLib = loadWithTimeout("https://analytics.sirius.menu/script")
-	if not analyticsLib then
-		warn("Failed to load analytics reporter")
-		analyticsLib = nil
-	elseif analyticsLib and type(analyticsLib.load) == "function" then
-		analyticsLib:load()
-	else
-		warn("Analytics library loaded but missing load function")
-		analyticsLib = nil
-	end
-	sendReport = function(ev_n, sc_n)
-		if not (type(analyticsLib) == "table" and type(analyticsLib.isLoaded) == "function" and analyticsLib:isLoaded()) then
-			warn("Analytics library not loaded")
-			return
-		end
-		if useStudio then
-			print('Sending Analytics')
-		else
-			if debugX then warn('Reporting Analytics') end
-			analyticsLib:report(
-				{
-					["name"] = ev_n,
-					["script"] = {["name"] = sc_n, ["version"] = Release}
-				},
-				{
-					["version"] = InterfaceBuild
-				}
-			)
-			if debugX then warn('Finished Report') end
-		end
-	end
-	if cachedSettings and (#cachedSettings == 0 or (cachedSettings.System and cachedSettings.System.usageAnalytics and cachedSettings.System.usageAnalytics.Value)) then
-		sendReport("execution", "iYannStore")
-	elseif not cachedSettings then
-		sendReport("execution", "iYannStore")
-	end
-end
-
-local promptUser = 2
-
-if promptUser == 1 and prompt and type(prompt.create) == "function" then
-	prompt.create(
-		'Be cautious when running scripts',
-	    [[Please be careful when running scripts from unknown developers. This script has already been ran.
-
-<font transparency='0.3'>Some scripts may steal your items or in-game goods.</font>]],
-		'Okay',
-		'',
-		function()
-
-		end
-	)
-end
-
-if debugX then
-	warn('Moving on to continue initialisation')
-end
-
-local RayfieldLibrary = {
-	Flags = {},
-	Theme = {
-		Default = {
-			TextColor = Color3.fromRGB(240, 240, 240),
-
-			Background = Color3.fromRGB(25, 25, 25),
-			Topbar = Color3.fromRGB(34, 34, 34),
-			Shadow = Color3.fromRGB(20, 20, 20),
-
-			NotificationBackground = Color3.fromRGB(20, 20, 20),
-			NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
-
-			TabBackground = Color3.fromRGB(80, 80, 80),
-			TabStroke = Color3.fromRGB(85, 85, 85),
-			TabBackgroundSelected = Color3.fromRGB(210, 210, 210),
-			TabTextColor = Color3.fromRGB(240, 240, 240),
-			SelectedTabTextColor = Color3.fromRGB(50, 50, 50),
-
-			ElementBackground = Color3.fromRGB(35, 35, 35),
-			ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
-			SecondaryElementBackground = Color3.fromRGB(25, 25, 25),
-			ElementStroke = Color3.fromRGB(50, 50, 50),
-			SecondaryElementStroke = Color3.fromRGB(40, 40, 40),
-
-			SliderBackground = Color3.fromRGB(50, 138, 220),
-			SliderProgress = Color3.fromRGB(50, 138, 220),
-			SliderStroke = Color3.fromRGB(58, 163, 255),
-
-			ToggleBackground = Color3.fromRGB(30, 30, 30),
-			ToggleEnabled = Color3.fromRGB(0, 146, 214),
-			ToggleDisabled = Color3.fromRGB(100, 100, 100),
-			ToggleEnabledStroke = Color3.fromRGB(0, 170, 255),
-			ToggleDisabledStroke = Color3.fromRGB(125, 125, 125),
-			ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(65, 65, 65),
-
-			DropdownSelected = Color3.fromRGB(40, 40, 40),
-			DropdownUnselected = Color3.fromRGB(30, 30, 30),
-
-			InputBackground = Color3.fromRGB(30, 30, 30),
-			InputStroke = Color3.fromRGB(65, 65, 65),
-			PlaceholderColor = Color3.fromRGB(178, 178, 178)
-		},
-
-		Ocean = {
-			TextColor = Color3.fromRGB(230, 240, 240),
-
-			Background = Color3.fromRGB(20, 30, 30),
-			Topbar = Color3.fromRGB(25, 40, 40),
-			Shadow = Color3.fromRGB(15, 20, 20),
-
-			NotificationBackground = Color3.fromRGB(25, 35, 35),
-			NotificationActionsBackground = Color3.fromRGB(230, 240, 240),
-
-			TabBackground = Color3.fromRGB(40, 60, 60),
-			TabStroke = Color3.fromRGB(50, 70, 70),
-			TabBackgroundSelected = Color3.fromRGB(100, 180, 180),
-			TabTextColor = Color3.fromRGB(210, 230, 230),
-			SelectedTabTextColor = Color3.fromRGB(20, 50, 50),
-
-			ElementBackground = Color3.fromRGB(30, 50, 50),
-			ElementBackgroundHover = Color3.fromRGB(40, 60, 60),
-			SecondaryElementBackground = Color3.fromRGB(30, 45, 45),
-			ElementStroke = Color3.fromRGB(45, 70, 70),
-			SecondaryElementStroke = Color3.fromRGB(40, 65, 65),
-
-			SliderBackground = Color3.fromRGB(0, 110, 110),
-			SliderProgress = Color3.fromRGB(0, 140, 140),
-			SliderStroke = Color3.fromRGB(0, 160, 160),
-
-			ToggleBackground = Color3.fromRGB(30, 50, 50),
-			ToggleEnabled = Color3.fromRGB(0, 130, 130),
-			ToggleDisabled = Color3.fromRGB(70, 90, 90),
-			ToggleEnabledStroke = Color3.fromRGB(0, 160, 160),
-			ToggleDisabledStroke = Color3.fromRGB(85, 105, 105),
-			ToggleEnabledOuterStroke = Color3.fromRGB(50, 100, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(45, 65, 65),
-
-			DropdownSelected = Color3.fromRGB(30, 60, 60),
-			DropdownUnselected = Color3.fromRGB(25, 40, 40),
-
-			InputBackground = Color3.fromRGB(30, 50, 50),
-			InputStroke = Color3.fromRGB(50, 70, 70),
-			PlaceholderColor = Color3.fromRGB(140, 160, 160)
-		},
-
-		AmberGlow = {
-			TextColor = Color3.fromRGB(255, 245, 230),
-
-			Background = Color3.fromRGB(45, 30, 20),
-			Topbar = Color3.fromRGB(55, 40, 25),
-			Shadow = Color3.fromRGB(35, 25, 15),
-
-			NotificationBackground = Color3.fromRGB(50, 35, 25),
-			NotificationActionsBackground = Color3.fromRGB(245, 230, 215),
-
-			TabBackground = Color3.fromRGB(75, 50, 35),
-			TabStroke = Color3.fromRGB(90, 60, 45),
-			TabBackgroundSelected = Color3.fromRGB(230, 180, 100),
-			TabTextColor = Color3.fromRGB(250, 220, 200),
-			SelectedTabTextColor = Color3.fromRGB(50, 30, 10),
-
-			ElementBackground = Color3.fromRGB(60, 45, 35),
-			ElementBackgroundHover = Color3.fromRGB(70, 50, 40),
-			SecondaryElementBackground = Color3.fromRGB(55, 40, 30),
-			ElementStroke = Color3.fromRGB(85, 60, 45),
-			SecondaryElementStroke = Color3.fromRGB(75, 50, 35),
-
-			SliderBackground = Color3.fromRGB(220, 130, 60),
-			SliderProgress = Color3.fromRGB(250, 150, 75),
-			SliderStroke = Color3.fromRGB(255, 170, 85),
-
-			ToggleBackground = Color3.fromRGB(55, 40, 30),
-			ToggleEnabled = Color3.fromRGB(240, 130, 30),
-			ToggleDisabled = Color3.fromRGB(90, 70, 60),
-			ToggleEnabledStroke = Color3.fromRGB(255, 160, 50),
-			ToggleDisabledStroke = Color3.fromRGB(110, 85, 75),
-			ToggleEnabledOuterStroke = Color3.fromRGB(200, 100, 50),
-			ToggleDisabledOuterStroke = Color3.fromRGB(75, 60, 55),
-
-			DropdownSelected = Color3.fromRGB(70, 50, 40),
-			DropdownUnselected = Color3.fromRGB(55, 40, 30),
-
-			InputBackground = Color3.fromRGB(60, 45, 35),
-			InputStroke = Color3.fromRGB(90, 65, 50),
-			PlaceholderColor = Color3.fromRGB(190, 150, 130)
-		},
-
-		Light = {
-			TextColor = Color3.fromRGB(40, 40, 40),
-
-			Background = Color3.fromRGB(245, 245, 245),
-			Topbar = Color3.fromRGB(230, 230, 230),
-			Shadow = Color3.fromRGB(200, 200, 200),
-
-			NotificationBackground = Color3.fromRGB(250, 250, 250),
-			NotificationActionsBackground = Color3.fromRGB(240, 240,
+return iYannStore
