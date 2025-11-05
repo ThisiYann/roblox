@@ -1,0 +1,348 @@
+-- Freecam dengan UI untuk Solara - Menggunakan Fungsi dari Infinite Yield
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local camera = workspace.CurrentCamera
+
+-- Variabel freecam
+local freecamEnabled = false
+local freecamConnection
+local originalCameraType = camera.CameraType
+local originalWalkSpeed = 16
+local originalJumpPower = 50
+
+-- Speed settings
+local camSpeed = 5
+local rotationSpeed = 2
+
+-- Function untuk mendapatkan Humanoid
+local function getHumanoid()
+    if player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+        return player.Character:FindFirstChildOfClass("Humanoid")
+    end
+    return nil
+end
+
+-- Initialize Humanoid
+local humanoid = getHumanoid()
+if humanoid then
+    originalWalkSpeed = humanoid.WalkSpeed
+    originalJumpPower = humanoid.JumpPower
+end
+
+player.CharacterAdded:Connect(function(character)
+    disableFreecam()
+    humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        originalWalkSpeed = humanoid.WalkSpeed
+        originalJumpPower = humanoid.JumpPower
+    end
+end)
+
+-- =============================================================================
+-- FUNGSI FREECAM DARI INFINITE YIELD (DIMODIFIKASI)
+-- =============================================================================
+local function infiniteYieldFreecam()
+    local cam = workspace.CurrentCamera
+    local mouse = player:GetMouse()
+    
+    -- Simpan state asli
+    local originalCF = cam.CFrame
+    local originalSubject = cam.CameraSubject
+    local originalType = cam.CameraType
+    
+    -- Variabel freecam
+    local isFreecamActive = true
+    local freecamCF = originalCF
+    local freecamSpeed = camSpeed
+    local freecamRot = Vector2.new(0, 0)
+    
+    -- Freeze karakter
+    local humanoid = getHumanoid()
+    if humanoid then
+        humanoid.WalkSpeed = 0
+        humanoid.JumpPower = 0
+    end
+    
+    -- Set camera ke scriptable
+    cam.CameraType = Enum.CameraType.Scriptable
+    cam.CameraSubject = nil
+    
+    -- Input handling
+    local function handleInput()
+        local moveVector = Vector3.new(0, 0, 0)
+        
+        -- Movement keys
+        if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+            moveVector = moveVector + Vector3.new(0, 0, -1)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+            moveVector = moveVector + Vector3.new(0, 0, 1)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+            moveVector = moveVector + Vector3.new(-1, 0, 0)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+            moveVector = moveVector + Vector3.new(1, 0, 0)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.E) then
+            moveVector = moveVector + Vector3.new(0, 1, 0)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.Q) then
+            moveVector = moveVector + Vector3.new(0, -1, 0)
+        end
+        
+        -- Rotation dengan mouse (RMB)
+        if UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) then
+            UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+            local delta = Vector2.new(
+                UserInputService:GetMouseDelta().X,
+                UserInputService:GetMouseDelta().Y
+            )
+            
+            freecamRot = freecamRot + Vector2.new(
+                -delta.X * 0.004 * rotationSpeed,
+                -delta.Y * 0.004 * rotationSpeed
+            )
+            
+            -- Clamp vertical rotation
+            freecamRot = Vector2.new(
+                freecamRot.X,
+                math.clamp(freecamRot.Y, -math.rad(89), math.rad(89))
+            )
+        else
+            UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+        end
+        
+        -- Rotation dengan arrow keys
+        if UserInputService:IsKeyDown(Enum.KeyCode.Left) then
+            freecamRot = Vector2.new(freecamRot.X - (0.03 * rotationSpeed), freecamRot.Y)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.Right) then
+            freecamRot = Vector2.new(freecamRot.X + (0.03 * rotationSpeed), freecamRot.Y)
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.Up) then
+            freecamRot = Vector2.new(freecamRot.X, math.max(freecamRot.Y - (0.03 * rotationSpeed), -math.rad(89)))
+        end
+        if UserInputService:IsKeyDown(Enum.KeyCode.Down) then
+            freecamRot = Vector2.new(freecamRot.X, math.min(freecamRot.Y + (0.03 * rotationSpeed), math.rad(89)))
+        end
+        
+        -- Apply movement
+        local moveCF = CFrame.fromEulerAnglesYXZ(freecamRot.Y, freecamRot.X, 0)
+        freecamCF = freecamCF + (moveCF:VectorToWorldSpace(moveVector) * freecamSpeed * 0.1)
+        
+        -- Apply rotation
+        cam.CFrame = CFrame.fromEulerAnglesYXZ(freecamRot.Y, freecamRot.X, 0) + freecamCF.Position
+    end
+    
+    -- Main loop
+    local connection
+    connection = RunService.RenderStepped:Connect(function()
+        if not isFreecamActive then
+            connection:Disconnect()
+            return
+        end
+        handleInput()
+    end)
+    
+    -- Return function untuk disable freecam
+    return function()
+        isFreecamActive = false
+        if connection then
+            connection:Disconnect()
+        end
+        
+        -- Restore camera
+        cam.CameraType = originalType
+        cam.CameraSubject = originalSubject
+        
+        -- Restore character movement
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.WalkSpeed = originalWalkSpeed
+            humanoid.JumpPower = originalJumpPower
+        end
+        
+        UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+    end
+end
+
+-- =============================================================================
+-- UI CREATION
+-- =============================================================================
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "FreecamUI"
+screenGui.Parent = player.PlayerGui
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 320, 0, 200)
+mainFrame.Position = UDim2.new(0.5, -160, 0, 20)
+mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+mainFrame.BorderSizePixel = 0
+mainFrame.Active = true
+mainFrame.Draggable = true
+mainFrame.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 8)
+corner.Parent = mainFrame
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 30)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Text = "FREE CAM CONTROL - INFINITE YIELD STYLE"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 12
+title.Parent = mainFrame
+
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Size = UDim2.new(1, -20, 0, 25)
+statusLabel.Position = UDim2.new(0, 10, 0, 40)
+statusLabel.BackgroundTransparency = 1
+statusLabel.TextColor3 = Color3.fromRGB(255, 50, 50)
+statusLabel.Text = "Status: OFF"
+statusLabel.Font = Enum.Font.Gotham
+statusLabel.TextSize = 12
+statusLabel.TextXAlignment = Enum.TextXAlignment.Left
+statusLabel.Parent = mainFrame
+
+local toggleBtn = Instance.new("TextButton")
+toggleBtn.Size = UDim2.new(1, -20, 0, 35)
+toggleBtn.Position = UDim2.new(0, 10, 0, 75)
+toggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+toggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggleBtn.Text = "TOGGLE FREECAM (F)"
+toggleBtn.Font = Enum.Font.Gotham
+toggleBtn.TextSize = 12
+toggleBtn.Parent = mainFrame
+
+local btnCorner = Instance.new("UICorner")
+btnCorner.CornerRadius = UDim.new(0, 6)
+btnCorner.Parent = toggleBtn
+
+local speedLabel = Instance.new("TextLabel")
+speedLabel.Size = UDim2.new(1, -20, 0, 20)
+speedLabel.Position = UDim2.new(0, 10, 0, 120)
+speedLabel.BackgroundTransparency = 1
+speedLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+speedLabel.Text = "Move Speed: " .. camSpeed
+speedLabel.Font = Enum.Font.Gotham
+speedLabel.TextSize = 11
+speedLabel.TextXAlignment = Enum.TextXAlignment.Left
+speedLabel.Parent = mainFrame
+
+local speedDown = Instance.new("TextButton")
+speedDown.Size = UDim2.new(0, 70, 0, 25)
+speedDown.Position = UDim2.new(0, 10, 0, 145)
+speedDown.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+speedDown.TextColor3 = Color3.fromRGB(255, 255, 255)
+speedDown.Text = "SLOWER"
+speedDown.Font = Enum.Font.Gotham
+speedDown.TextSize = 10
+speedDown.Parent = mainFrame
+
+local speedUp = Instance.new("TextButton")
+speedUp.Size = UDim2.new(0, 70, 0, 25)
+speedUp.Position = UDim2.new(1, -80, 0, 145)
+speedUp.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+speedUp.TextColor3 = Color3.fromRGB(255, 255, 255)
+speedUp.Text = "FASTER"
+speedUp.Font = Enum.Font.Gotham
+speedUp.TextSize = 10
+speedUp.Parent = mainFrame
+
+local closeBtn = Instance.new("TextButton")
+closeBtn.Size = UDim2.new(0, 80, 0, 20)
+closeBtn.Position = UDim2.new(0.5, -40, 1, -25)
+closeBtn.BackgroundColor3 = Color3.fromRGB(100, 30, 30)
+closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.Text = "CLOSE UI"
+closeBtn.Font = Enum.Font.Gotham
+closeBtn.TextSize = 10
+closeBtn.Parent = mainFrame
+
+local smallCorner = Instance.new("UICorner")
+smallCorner.CornerRadius = UDim.new(0, 4)
+smallCorner.Parent = speedDown
+smallCorner:Clone().Parent = speedUp
+smallCorner:Clone().Parent = closeBtn
+
+-- =============================================================================
+-- FREECAM FUNCTIONS
+-- =============================================================================
+local disableFreecamFunction = nil
+
+function enableFreecam()
+    if freecamEnabled then return end
+    
+    freecamEnabled = true
+    statusLabel.Text = "Status: ON"
+    statusLabel.TextColor3 = Color3.fromRGB(50, 255, 50)
+    
+    -- Jalankan freecam dari Infinite Yield
+    disableFreecamFunction = infiniteYieldFreecam()
+end
+
+function disableFreecam()
+    if not freecamEnabled then return end
+    
+    freecamEnabled = false
+    statusLabel.Text = "Status: OFF"
+    statusLabel.TextColor3 = Color3.fromRGB(255, 50, 50)
+    
+    -- Panggil fungsi disable dari Infinite Yield
+    if disableFreecamFunction then
+        disableFreecamFunction()
+        disableFreecamFunction = nil
+    end
+end
+
+-- =============================================================================
+-- EVENT HANDLERS
+-- =============================================================================
+toggleBtn.MouseButton1Click:Connect(function()
+    if freecamEnabled then
+        disableFreecam()
+    else
+        enableFreecam()
+    end
+end)
+
+speedDown.MouseButton1Click:Connect(function()
+    camSpeed = math.max(1, camSpeed - 2)
+    speedLabel.Text = "Move Speed: " .. camSpeed
+end)
+
+speedUp.MouseButton1Click:Connect(function()
+    camSpeed = math.min(50, camSpeed + 2)
+    speedLabel.Text = "Move Speed: " .. camSpeed
+end)
+
+closeBtn.MouseButton1Click:Connect(function()
+    disableFreecam()
+    screenGui:Destroy()
+end)
+
+-- Keyboard toggle
+UserInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.F and not input:IsProcessed() then
+        if freecamEnabled then
+            disableFreecam()
+        else
+            enableFreecam()
+        end
+    end
+end)
+
+print("Infinite Yield Style Freecam loaded!")
+print("Controls:")
+print("F - Toggle freecam")
+print("WASD - Movement")
+print("Q/E - Up/Down")
+print("RMB + Mouse - Look around")
+print("Arrow Keys - Manual rotation")
