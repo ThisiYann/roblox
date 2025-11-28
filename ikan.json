@@ -1,0 +1,2690 @@
+[
+    {
+        "Name": "Reef Chromis",
+        "Tier": 1,
+        "Id": 43,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=130761855658346&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Abyss Seahorse",
+        "Tier": 5,
+        "Id": 15,
+        "Chance": 0.000011764705882352942,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=140212951494890&type=Asset&size=420x420&format=Png",
+        "SellPrice": 38500
+    },
+    {
+        "Name": "Ash Basslet",
+        "Tier": 1,
+        "Id": 20,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=89467763428838&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Astra Damsel",
+        "Tier": 4,
+        "Id": 17,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=80597542368624&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1633
+    },
+    {
+        "Name": "Azure Damsel",
+        "Tier": 1,
+        "Id": 66,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82037285284063&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Banded Butterfly",
+        "Tier": 2,
+        "Id": 44,
+        "Chance": 0.008,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108599906664305&type=Asset&size=420x420&format=Png",
+        "SellPrice": 153
+    },
+    {
+        "Name": "Blue Lobster",
+        "Tier": 4,
+        "Id": 22,
+        "Chance": 0.00004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79569787883962&type=Asset&size=420x420&format=Png",
+        "SellPrice": 11355
+    },
+    {
+        "Name": "Blueflame Ray",
+        "Tier": 5,
+        "Id": 47,
+        "Chance": 0.00001075268817204301,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=113303332536600&type=Asset&size=420x420&format=Png",
+        "SellPrice": 45000
+    },
+    {
+        "Name": "Boa Angelfish",
+        "Tier": 1,
+        "Id": 45,
+        "Chance": 0.06666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=132840818442941&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Bumblebee Grouper",
+        "Tier": 4,
+        "Id": 37,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138718017852833&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3225
+    },
+    {
+        "Name": "Candy Butterfly",
+        "Tier": 2,
+        "Id": 59,
+        "Chance": 0.0026666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118627817589849&type=Asset&size=420x420&format=Png",
+        "SellPrice": 419
+    },
+    {
+        "Name": "Charmed Tang",
+        "Tier": 3,
+        "Id": 18,
+        "Chance": 0.003076923076923077,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115703943090504&type=Asset&size=420x420&format=Png",
+        "SellPrice": 393
+    },
+    {
+        "Name": "Chrome Tuna",
+        "Tier": 4,
+        "Id": 53,
+        "Chance": 0.00011111111111111112,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=103021560011734&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4050
+    },
+    {
+        "Name": "Clownfish",
+        "Tier": 1,
+        "Id": 64,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=98117815811053&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Coal Tang",
+        "Tier": 2,
+        "Id": 19,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=92488575546885&type=Asset&size=420x420&format=Png",
+        "SellPrice": 74
+    },
+    {
+        "Name": "Copperband Butterfly",
+        "Tier": 2,
+        "Id": 67,
+        "Chance": 0.05,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79518413256091&type=Asset&size=420x420&format=Png",
+        "SellPrice": 76
+    },
+    {
+        "Name": "Corazon Damsel",
+        "Tier": 1,
+        "Id": 31,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=117026260439113&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Cow Clownfish",
+        "Tier": 4,
+        "Id": 57,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88952725333000&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1044
+    },
+    {
+        "Name": "Darwin Clownfish",
+        "Tier": 3,
+        "Id": 71,
+        "Chance": 0.0013333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=109996187340520&type=Asset&size=420x420&format=Png",
+        "SellPrice": 869
+    },
+    {
+        "Name": "Domino Damsel",
+        "Tier": 4,
+        "Id": 26,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=100965955122629&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1444
+    },
+    {
+        "Name": "Dorhey Tang",
+        "Tier": 4,
+        "Id": 70,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136891625122640&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1044
+    },
+    {
+        "Name": "Dotted Stingray",
+        "Tier": 5,
+        "Id": 75,
+        "Chance": 0.000010989010989010989,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=132465838670740&type=Asset&size=420x420&format=Png",
+        "SellPrice": 31500
+    },
+    {
+        "Name": "Enchant Stone",
+        "Tier": 4,
+        "Id": 10,
+        "Chance": 0.0003448275862068965,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138135001339336&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Enchanted Angelfish",
+        "Tier": 4,
+        "Id": 14,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108347802265821&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4200
+    },
+    {
+        "Name": "Fire Goby",
+        "Tier": 2,
+        "Id": 41,
+        "Chance": 0.004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=94533805203782&type=Asset&size=420x420&format=Png",
+        "SellPrice": 347
+    },
+    {
+        "Name": "Firecoal Damsel",
+        "Tier": 4,
+        "Id": 49,
+        "Chance": 0.0004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108870635586928&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1044
+    },
+    {
+        "Name": "Flame Angelfish",
+        "Tier": 2,
+        "Id": 68,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128385926161840&type=Asset&size=420x420&format=Png",
+        "SellPrice": 135
+    },
+    {
+        "Name": "Greenbee Grouper",
+        "Tier": 4,
+        "Id": 25,
+        "Chance": 0.00016666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79015880866732&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5732
+    },
+    {
+        "Name": "Hammerhead Shark",
+        "Tier": 5,
+        "Id": 52,
+        "Chance": 0.00001000010000100001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=91373020648344&type=Asset&size=420x420&format=Png",
+        "SellPrice": 46500
+    },
+    {
+        "Name": "Hawks Turtle",
+        "Tier": 5,
+        "Id": 21,
+        "Chance": 0.000013333333333333334,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129453304232199&type=Asset&size=420x420&format=Png",
+        "SellPrice": 40500
+    },
+    {
+        "Name": "Starjam Tang",
+        "Tier": 4,
+        "Id": 24,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129447526017878&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4200
+    },
+    {
+        "Name": "Jennifer Dottyback",
+        "Tier": 1,
+        "Id": 46,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82888113748973&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Jewel Tang",
+        "Tier": 2,
+        "Id": 60,
+        "Chance": 0.004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=130344776739450&type=Asset&size=420x420&format=Png",
+        "SellPrice": 347
+    },
+    {
+        "Name": "Kau Cardinal",
+        "Tier": 3,
+        "Id": 40,
+        "Chance": 0.0013333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120735400809864&type=Asset&size=420x420&format=Png",
+        "SellPrice": 869
+    },
+    {
+        "Name": "Korean Angelfish",
+        "Tier": 3,
+        "Id": 72,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=134484917450451&type=Asset&size=420x420&format=Png",
+        "SellPrice": 391
+    },
+    {
+        "Name": "Lavafin Tuna",
+        "Tier": 4,
+        "Id": 48,
+        "Chance": 0.00010001000100010001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=96111934641941&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4500
+    },
+    {
+        "Name": "Lobster",
+        "Tier": 4,
+        "Id": 36,
+        "Chance": 0.00004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=106973499045957&type=Asset&size=420x420&format=Png",
+        "SellPrice": 15750
+    },
+    {
+        "Name": "Loggerhead Turtle",
+        "Tier": 5,
+        "Id": 34,
+        "Chance": 0.000018181818181818183,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=91953712080535&type=Asset&size=420x420&format=Png",
+        "SellPrice": 27000
+    },
+    {
+        "Name": "Longnose Butterfly",
+        "Tier": 4,
+        "Id": 38,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=78488362036598&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1575
+    },
+    {
+        "Name": "Magic Tang",
+        "Tier": 4,
+        "Id": 16,
+        "Chance": 0.00013333333333333334,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88573644059627&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4500
+    },
+    {
+        "Name": "Magma Goby",
+        "Tier": 2,
+        "Id": 50,
+        "Chance": 0.01818181818181818,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136836819813966&type=Asset&size=420x420&format=Png",
+        "SellPrice": 95
+    },
+    {
+        "Name": "Manta Ray",
+        "Tier": 5,
+        "Id": 54,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88385941559907&type=Asset&size=420x420&format=Png",
+        "SellPrice": 24750
+    },
+    {
+        "Name": "Maroon Butterfly",
+        "Tier": 4,
+        "Id": 56,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137187990814642&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1044
+    },
+    {
+        "Name": "Maze Angelfish",
+        "Tier": 3,
+        "Id": 23,
+        "Chance": 0.008,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=133123622412997&type=Asset&size=420x420&format=Png",
+        "SellPrice": 153
+    },
+    {
+        "Name": "Moorish Idol",
+        "Tier": 4,
+        "Id": 55,
+        "Chance": 0.00030003000300030005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=99527607304877&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2700
+    },
+    {
+        "Name": "Bandit Angelfish",
+        "Tier": 2,
+        "Id": 117,
+        "Chance": 0.015384615384615386,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86776001616210&type=Asset&size=420x420&format=Png",
+        "SellPrice": 105
+    },
+    {
+        "Name": "Zoster Butterfly",
+        "Tier": 1,
+        "Id": 116,
+        "Chance": 0.125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=80869011808607&type=Asset&size=420x420&format=Png",
+        "SellPrice": 28
+    },
+    {
+        "Name": "Orangy Goby",
+        "Tier": 1,
+        "Id": 32,
+        "Chance": 0.14285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=80870534603019&type=Asset&size=420x420&format=Png",
+        "SellPrice": 36
+    },
+    {
+        "Name": "Panther Grouper",
+        "Tier": 4,
+        "Id": 27,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110559683316227&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1044
+    },
+    {
+        "Name": "Prismy Seahorse",
+        "Tier": 5,
+        "Id": 35,
+        "Chance": 0.0000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=105300029672501&type=Asset&size=420x420&format=Png",
+        "SellPrice": 29250
+    },
+    {
+        "Name": "Scissortail Dartfish",
+        "Tier": 2,
+        "Id": 29,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=90918658215983&type=Asset&size=420x420&format=Png",
+        "SellPrice": 369
+    },
+    {
+        "Name": "Shrimp Goby",
+        "Tier": 2,
+        "Id": 42,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79722493639079&type=Asset&size=420x420&format=Png",
+        "SellPrice": 90
+    },
+    {
+        "Name": "Skunk Tilefish",
+        "Tier": 1,
+        "Id": 63,
+        "Chance": 0.14285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=117649671337741&type=Asset&size=420x420&format=Png",
+        "SellPrice": 36
+    },
+    {
+        "Name": "Specked Butterfly",
+        "Tier": 1,
+        "Id": 33,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=116155560772333&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Strawberry Dotty",
+        "Tier": 1,
+        "Id": 65,
+        "Chance": 0.05,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=113189737934915&type=Asset&size=420x420&format=Png",
+        "SellPrice": 27
+    },
+    {
+        "Name": "Sushi Cardinal",
+        "Tier": 4,
+        "Id": 39,
+        "Chance": 0.0008,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=104436232234256&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1282
+    },
+    {
+        "Name": "Tricolore Butterfly",
+        "Tier": 2,
+        "Id": 30,
+        "Chance": 0.014285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138769463668635&type=Asset&size=420x420&format=Png",
+        "SellPrice": 112
+    },
+    {
+        "Name": "Unicorn Tang",
+        "Tier": 4,
+        "Id": 74,
+        "Chance": 0.00022222222222222223,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85435653124474&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2835
+    },
+    {
+        "Name": "Vintage Blue Tang",
+        "Tier": 1,
+        "Id": 62,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136876564868613&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Vintage Damsel",
+        "Tier": 2,
+        "Id": 58,
+        "Chance": 0.007407407407407408,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=135465556501628&type=Asset&size=420x420&format=Png",
+        "SellPrice": 180
+    },
+    {
+        "Name": "Volcanic Basslet",
+        "Tier": 1,
+        "Id": 51,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=73441603866106&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "White Clownfish",
+        "Tier": 2,
+        "Id": 28,
+        "Chance": 0.004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=94709558139061&type=Asset&size=420x420&format=Png",
+        "SellPrice": 347
+    },
+    {
+        "Name": "Yello Damselfish",
+        "Tier": 2,
+        "Id": 69,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=125066072333378&type=Asset&size=420x420&format=Png",
+        "SellPrice": 99
+    },
+    {
+        "Name": "Yellowfin Tuna",
+        "Tier": 4,
+        "Id": 73,
+        "Chance": 0.00013333333333333334,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86565235696991&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3600
+    },
+    {
+        "Name": "Yellowstate Angelfish",
+        "Tier": 1,
+        "Id": 61,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82807541331151&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Salmon",
+        "Tier": 2,
+        "Id": 190,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=125238936461158&type=Asset&size=420x420&format=Png",
+        "SellPrice": 103
+    },
+    {
+        "Name": "Blob Shark",
+        "Tier": 7,
+        "Id": 82,
+        "Chance": 0.000004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120294742064292&type=Asset&size=420x420&format=Png",
+        "SellPrice": 98000
+    },
+    {
+        "Name": "Volsail Tang",
+        "Tier": 3,
+        "Id": 89,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129946055426678&type=Asset&size=420x420&format=Png",
+        "SellPrice": 369
+    },
+    {
+        "Name": "Rockform Cardianl",
+        "Tier": 3,
+        "Id": 88,
+        "Chance": 0.004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120329148296828&type=Asset&size=420x420&format=Png",
+        "SellPrice": 347
+    },
+    {
+        "Name": "Lava Butterfly",
+        "Tier": 2,
+        "Id": 87,
+        "Chance": 0.008,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=121441755541039&type=Asset&size=420x420&format=Png",
+        "SellPrice": 153
+    },
+    {
+        "Name": "Slurpfish Chromis",
+        "Tier": 2,
+        "Id": 86,
+        "Chance": 0.000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=73157781682607&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3830
+    },
+    {
+        "Name": "Festive Goby",
+        "Tier": 1,
+        "Id": 92,
+        "Chance": 0.3333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=131719468046777&type=Asset&size=420x420&format=Png",
+        "SellPrice": 21
+    },
+    {
+        "Name": "Mistletoe Damsel",
+        "Tier": 1,
+        "Id": 91,
+        "Chance": 0.25,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=119896827350397&type=Asset&size=420x420&format=Png",
+        "SellPrice": 26
+    },
+    {
+        "Name": "Gingerbread Tang",
+        "Tier": 1,
+        "Id": 90,
+        "Chance": 0.2,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=81165959957452&type=Asset&size=420x420&format=Png",
+        "SellPrice": 26
+    },
+    {
+        "Name": "Great Christmas Whale",
+        "Tier": 7,
+        "Id": 99,
+        "Chance": 0.000001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=71302255255094&type=Asset&size=420x420&format=Png",
+        "SellPrice": 195000
+    },
+    {
+        "Name": "Gingerbread Clownfish",
+        "Tier": 2,
+        "Id": 94,
+        "Chance": 0.01818181818181818,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76627481663195&type=Asset&size=420x420&format=Png",
+        "SellPrice": 72
+    },
+    {
+        "Name": "Gingerbread Turtle",
+        "Tier": 5,
+        "Id": 97,
+        "Chance": 0.000014285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=105391647263950&type=Asset&size=420x420&format=Png",
+        "SellPrice": 38750
+    },
+    {
+        "Name": "Gingerbread Shark",
+        "Tier": 6,
+        "Id": 98,
+        "Chance": 0.000005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=134485196164902&type=Asset&size=420x420&format=Png",
+        "SellPrice": 89253
+    },
+    {
+        "Name": "Christmastree Longnose",
+        "Tier": 3,
+        "Id": 93,
+        "Chance": 0.002857142857142857,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=121538254026074&type=Asset&size=420x420&format=Png",
+        "SellPrice": 190
+    },
+    {
+        "Name": "Candycane Lobster",
+        "Tier": 4,
+        "Id": 95,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=81306607650028&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2138
+    },
+    {
+        "Name": "Festive Pufferfish",
+        "Tier": 4,
+        "Id": 96,
+        "Chance": 0.0008333333333333334,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=111730193849173&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1244
+    },
+    {
+        "Name": "Blue-Banded Goby",
+        "Tier": 2,
+        "Id": 106,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137187691311291&type=Asset&size=420x420&format=Png",
+        "SellPrice": 91
+    },
+    {
+        "Name": "Blumato Clownfish",
+        "Tier": 2,
+        "Id": 107,
+        "Chance": 0.01818181818181818,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=135433263876257&type=Asset&size=420x420&format=Png",
+        "SellPrice": 95
+    },
+    {
+        "Name": "Conspi Angelfish",
+        "Tier": 1,
+        "Id": 108,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=70666845671780&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Fade Tang",
+        "Tier": 1,
+        "Id": 109,
+        "Chance": 0.06666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=99713500880459&type=Asset&size=420x420&format=Png",
+        "SellPrice": 43
+    },
+    {
+        "Name": "Lined Cardinal Fish",
+        "Tier": 5,
+        "Id": 110,
+        "Chance": 0.0001818181818181818,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=96973556889996&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3100
+    },
+    {
+        "Name": "Masked Angelfish",
+        "Tier": 1,
+        "Id": 111,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85192354177842&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Pygmy Goby",
+        "Tier": 1,
+        "Id": 112,
+        "Chance": 0.16666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128173847216247&type=Asset&size=420x420&format=Png",
+        "SellPrice": 21
+    },
+    {
+        "Name": "Sail Tang",
+        "Tier": 1,
+        "Id": 113,
+        "Chance": 0.2,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86089485683202&type=Asset&size=420x420&format=Png",
+        "SellPrice": 24
+    },
+    {
+        "Name": "Watanabei Angelfish",
+        "Tier": 1,
+        "Id": 114,
+        "Chance": 0.25,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=133021124365377&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "White Tang",
+        "Tier": 1,
+        "Id": 115,
+        "Chance": 0.2,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138516719984773&type=Asset&size=420x420&format=Png",
+        "SellPrice": 21
+    },
+    {
+        "Name": "Ballina Angelfish",
+        "Tier": 3,
+        "Id": 119,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=99236757363784&type=Asset&size=420x420&format=Png",
+        "SellPrice": 391
+    },
+    {
+        "Name": "Bleekers Damsel",
+        "Tier": 2,
+        "Id": 121,
+        "Chance": 0.02857142857142857,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=116977046936052&type=Asset&size=420x420&format=Png",
+        "SellPrice": 74
+    },
+    {
+        "Name": "Loving Shark",
+        "Tier": 6,
+        "Id": 122,
+        "Chance": 0.000006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=119173750281399&type=Asset&size=420x420&format=Png",
+        "SellPrice": 59583
+    },
+    {
+        "Name": "Pink Smith Damsel",
+        "Tier": 2,
+        "Id": 120,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76606007357699&type=Asset&size=420x420&format=Png",
+        "SellPrice": 62
+    },
+    {
+        "Name": "Axolotl",
+        "Tier": 4,
+        "Id": 138,
+        "Chance": 0.00015384615384615385,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76558551981982&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3971
+    },
+    {
+        "Name": "Silver Tuna",
+        "Tier": 2,
+        "Id": 139,
+        "Chance": 0.016666666666666668,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=84055400571306&type=Asset&size=420x420&format=Png",
+        "SellPrice": 62
+    },
+    {
+        "Name": "Pilot Fish",
+        "Tier": 2,
+        "Id": 140,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=114269547366510&type=Asset&size=420x420&format=Png",
+        "SellPrice": 58
+    },
+    {
+        "Name": "Patriot Tang",
+        "Tier": 1,
+        "Id": 135,
+        "Chance": 0.1,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118534942671075&type=Asset&size=420x420&format=Png",
+        "SellPrice": 36
+    },
+    {
+        "Name": "Frostborn Shark",
+        "Tier": 7,
+        "Id": 136,
+        "Chance": 0.000002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=125463067542850&type=Asset&size=420x420&format=Png",
+        "SellPrice": 100000
+    },
+    {
+        "Name": "Plasma Shark",
+        "Tier": 5,
+        "Id": 137,
+        "Chance": 0.000004444444444444444,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88847410678758&type=Asset&size=420x420&format=Png",
+        "SellPrice": 94500
+    },
+    {
+        "Name": "Pufferfish",
+        "Tier": 4,
+        "Id": 143,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88950964359044&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1145
+    },
+    {
+        "Name": "Racoon Butterfly Fish",
+        "Tier": 2,
+        "Id": 144,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=92680808637130&type=Asset&size=420x420&format=Png",
+        "SellPrice": 71
+    },
+    {
+        "Name": "Orange Basslet",
+        "Tier": 2,
+        "Id": 142,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129792505755834&type=Asset&size=420x420&format=Png",
+        "SellPrice": 64
+    },
+    {
+        "Name": "Strippled Seahorse",
+        "Tier": 5,
+        "Id": 146,
+        "Chance": 0.000010526315789473685,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120444751052938&type=Asset&size=420x420&format=Png",
+        "SellPrice": 40500
+    },
+    {
+        "Name": "Thresher Shark",
+        "Tier": 5,
+        "Id": 147,
+        "Chance": 0.000010526315789473685,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=70681751795899&type=Asset&size=420x420&format=Png",
+        "SellPrice": 44000
+    },
+    {
+        "Name": "Great Whale",
+        "Tier": 7,
+        "Id": 141,
+        "Chance": 0.0000010526315789473684,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110349456710432&type=Asset&size=420x420&format=Png",
+        "SellPrice": 180000
+    },
+    {
+        "Name": "Viperfish",
+        "Tier": 2,
+        "Id": 163,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=132331063285672&type=Asset&size=420x420&format=Png",
+        "SellPrice": 94
+    },
+    {
+        "Name": "Deep Sea Crab",
+        "Tier": 5,
+        "Id": 152,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=107492220673765&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4680
+    },
+    {
+        "Name": "Spotted Lantern Fish",
+        "Tier": 2,
+        "Id": 161,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=121295544969455&type=Asset&size=420x420&format=Png",
+        "SellPrice": 88
+    },
+    {
+        "Name": "Robot Kraken",
+        "Tier": 7,
+        "Id": 159,
+        "Chance": 2.857142857142857e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=80927639907406&type=Asset&size=420x420&format=Png",
+        "SellPrice": 327500
+    },
+    {
+        "Name": "Monk Fish",
+        "Tier": 4,
+        "Id": 160,
+        "Chance": 0.0003333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=117683281700675&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3200
+    },
+    {
+        "Name": "King Crab",
+        "Tier": 6,
+        "Id": 158,
+        "Chance": 8.333333333333333e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136951139611035&type=Asset&size=420x420&format=Png",
+        "SellPrice": 218500
+    },
+    {
+        "Name": "Jellyfish",
+        "Tier": 3,
+        "Id": 157,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115477999636961&type=Asset&size=420x420&format=Png",
+        "SellPrice": 402
+    },
+    {
+        "Name": "Giant Squid",
+        "Tier": 7,
+        "Id": 156,
+        "Chance": 0.00000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=135470649745250&type=Asset&size=420x420&format=Png",
+        "SellPrice": 162300
+    },
+    {
+        "Name": "Fangtooth",
+        "Tier": 4,
+        "Id": 155,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82285034746187&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1840
+    },
+    {
+        "Name": "Electric Eel",
+        "Tier": 1,
+        "Id": 154,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=112551199622795&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Vampire Squid",
+        "Tier": 4,
+        "Id": 162,
+        "Chance": 0.0003333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=87203317027314&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3770
+    },
+    {
+        "Name": "Dark Eel",
+        "Tier": 2,
+        "Id": 153,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=135880333888900&type=Asset&size=420x420&format=Png",
+        "SellPrice": 96
+    },
+    {
+        "Name": "Boar Fish",
+        "Tier": 1,
+        "Id": 151,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=114009571858522&type=Asset&size=420x420&format=Png",
+        "SellPrice": 24
+    },
+    {
+        "Name": "Blob Fish",
+        "Tier": 6,
+        "Id": 150,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=109329387304752&type=Asset&size=420x420&format=Png",
+        "SellPrice": 26200
+    },
+    {
+        "Name": "Angler Fish",
+        "Tier": 4,
+        "Id": 149,
+        "Chance": 0.0003333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=95565358831204&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3620
+    },
+    {
+        "Name": "Dead Fish",
+        "Tier": 1,
+        "Id": 166,
+        "Chance": 0.25,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72777968915255&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Skeleton Fish",
+        "Tier": 1,
+        "Id": 165,
+        "Chance": 0.1,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110090152643341&type=Asset&size=420x420&format=Png",
+        "SellPrice": 26
+    },
+    {
+        "Name": "Swordfish",
+        "Tier": 2,
+        "Id": 164,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=105539179190905&type=Asset&size=420x420&format=Png",
+        "SellPrice": 84
+    },
+    {
+        "Name": "Worm Fish",
+        "Tier": 7,
+        "Id": 145,
+        "Chance": 3.3333333333333337e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88157067345872&type=Asset&size=420x420&format=Png",
+        "SellPrice": 280000
+    },
+    {
+        "Name": "Rockfish",
+        "Tier": 2,
+        "Id": 189,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88961987133136&type=Asset&size=420x420&format=Png",
+        "SellPrice": 92
+    },
+    {
+        "Name": "Sheepshead Fish",
+        "Tier": 3,
+        "Id": 191,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=112711438552296&type=Asset&size=420x420&format=Png",
+        "SellPrice": 412
+    },
+    {
+        "Name": "Blackcap Basslet",
+        "Tier": 2,
+        "Id": 182,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=95659897738388&type=Asset&size=420x420&format=Png",
+        "SellPrice": 95
+    },
+    {
+        "Name": "Catfish",
+        "Tier": 3,
+        "Id": 183,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=98970734819318&type=Asset&size=420x420&format=Png",
+        "SellPrice": 422
+    },
+    {
+        "Name": "Coney Fish",
+        "Tier": 3,
+        "Id": 184,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=126049387807805&type=Asset&size=420x420&format=Png",
+        "SellPrice": 287
+    },
+    {
+        "Name": "Hermit Crab",
+        "Tier": 6,
+        "Id": 185,
+        "Chance": 0.000016666666666666669,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=84444153694943&type=Asset&size=420x420&format=Png",
+        "SellPrice": 29700
+    },
+    {
+        "Name": "Parrot Fish",
+        "Tier": 2,
+        "Id": 186,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101895900955177&type=Asset&size=420x420&format=Png",
+        "SellPrice": 93
+    },
+    {
+        "Name": "Queen Crab",
+        "Tier": 7,
+        "Id": 187,
+        "Chance": 0.00000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=73709080100110&type=Asset&size=420x420&format=Png",
+        "SellPrice": 218500
+    },
+    {
+        "Name": "Red Snapper",
+        "Tier": 2,
+        "Id": 188,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=70818316245817&type=Asset&size=420x420&format=Png",
+        "SellPrice": 97
+    },
+    {
+        "Name": "Lake Sturgeon",
+        "Tier": 5,
+        "Id": 199,
+        "Chance": 0.00005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=91608917361161&type=Asset&size=420x420&format=Png",
+        "SellPrice": 14350
+    },
+    {
+        "Name": "Orca",
+        "Tier": 7,
+        "Id": 200,
+        "Chance": 6.666666666666667e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120876783250189&type=Asset&size=420x420&format=Png",
+        "SellPrice": 231500
+    },
+    {
+        "Name": "Barracuda Fish",
+        "Tier": 3,
+        "Id": 194,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=109111807975453&type=Asset&size=420x420&format=Png",
+        "SellPrice": 392
+    },
+    {
+        "Name": "Crystal Crab",
+        "Tier": 7,
+        "Id": 195,
+        "Chance": 0.0000013333333333333335,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110188263756245&type=Asset&size=420x420&format=Png",
+        "SellPrice": 162000
+    },
+    {
+        "Name": "Frog",
+        "Tier": 3,
+        "Id": 196,
+        "Chance": 0.002857142857142857,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=71290852112649&type=Asset&size=420x420&format=Png",
+        "SellPrice": 432
+    },
+    {
+        "Name": "Gar Fish",
+        "Tier": 2,
+        "Id": 197,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=116893747982628&type=Asset&size=420x420&format=Png",
+        "SellPrice": 72
+    },
+    {
+        "Name": "Herring Fish",
+        "Tier": 1,
+        "Id": 198,
+        "Chance": 0.1,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=83087225269219&type=Asset&size=420x420&format=Png",
+        "SellPrice": 21
+    },
+    {
+        "Name": "Dark Tentacle",
+        "Tier": 3,
+        "Id": 210,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82928155035287&type=Asset&size=420x420&format=Png",
+        "SellPrice": 392
+    },
+    {
+        "Name": "Flat Fish",
+        "Tier": 2,
+        "Id": 202,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72446028934813&type=Asset&size=420x420&format=Png",
+        "SellPrice": 58
+    },
+    {
+        "Name": "Flying Fish",
+        "Tier": 2,
+        "Id": 203,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76398271598694&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Lion Fish",
+        "Tier": 2,
+        "Id": 204,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=92595165502684&type=Asset&size=420x420&format=Png",
+        "SellPrice": 143
+    },
+    {
+        "Name": "Starfish",
+        "Tier": 3,
+        "Id": 209,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=93878183859150&type=Asset&size=420x420&format=Png",
+        "SellPrice": 385
+    },
+    {
+        "Name": "Wahoo",
+        "Tier": 2,
+        "Id": 211,
+        "Chance": 0.015384615384615386,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88311721896238&type=Asset&size=420x420&format=Png",
+        "SellPrice": 105
+    },
+    {
+        "Name": "Saw Fish",
+        "Tier": 5,
+        "Id": 208,
+        "Chance": 0.00006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=102132456822726&type=Asset&size=420x420&format=Png",
+        "SellPrice": 11250
+    },
+    {
+        "Name": "Pink Dolphin",
+        "Tier": 4,
+        "Id": 207,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86256600614394&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3910
+    },
+    {
+        "Name": "Monster Shark",
+        "Tier": 7,
+        "Id": 206,
+        "Chance": 4e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=109551787474599&type=Asset&size=420x420&format=Png",
+        "SellPrice": 245000
+    },
+    {
+        "Name": "Luminous Fish",
+        "Tier": 6,
+        "Id": 205,
+        "Chance": 0.0000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=78374908088019&type=Asset&size=420x420&format=Png",
+        "SellPrice": 31150
+    },
+    {
+        "Name": "Eerie Shark",
+        "Tier": 7,
+        "Id": 201,
+        "Chance": 0.000004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=114252804065144&type=Asset&size=420x420&format=Png",
+        "SellPrice": 92500
+    },
+    {
+        "Name": "Scare",
+        "Tier": 7,
+        "Id": 225,
+        "Chance": 3.3333333333333337e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76893887663677&type=Asset&size=420x420&format=Png",
+        "SellPrice": 280000
+    },
+    {
+        "Name": "Synodontis",
+        "Tier": 5,
+        "Id": 224,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115468864043768&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3825
+    },
+    {
+        "Name": "Armor Catfish",
+        "Tier": 6,
+        "Id": 215,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=130020230064983&type=Asset&size=420x420&format=Png",
+        "SellPrice": 30500
+    },
+    {
+        "Name": "Thin Armor Shark",
+        "Tier": 7,
+        "Id": 218,
+        "Chance": 0.0000033333333333333335,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=123540389497955&type=Asset&size=420x420&format=Png",
+        "SellPrice": 91000
+    },
+    {
+        "Name": "Narwhal",
+        "Tier": 4,
+        "Id": 227,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128440123940426&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2045
+    },
+    {
+        "Name": "Lochness Monster",
+        "Tier": 7,
+        "Id": 228,
+        "Chance": 3.3333333333333337e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88964613838360&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330000
+    },
+    {
+        "Name": "Antique Cup",
+        "Tier": 3,
+        "Id": 239,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82143322416088&type=Asset&size=420x420&format=Png",
+        "SellPrice": 430
+    },
+    {
+        "Name": "Antique Watch",
+        "Tier": 3,
+        "Id": 238,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=93941516308809&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1680
+    },
+    {
+        "Name": "Sea Shell",
+        "Tier": 2,
+        "Id": 232,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=140728296641493&type=Asset&size=420x420&format=Png",
+        "SellPrice": 76
+    },
+    {
+        "Name": "Pearl",
+        "Tier": 3,
+        "Id": 235,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=83797707479837&type=Asset&size=420x420&format=Png",
+        "SellPrice": 715
+    },
+    {
+        "Name": "Old Boot",
+        "Tier": 1,
+        "Id": 234,
+        "Chance": 0.04,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128215101057455&type=Asset&size=420x420&format=Png",
+        "SellPrice": 27
+    },
+    {
+        "Name": "Expensive Chain",
+        "Tier": 4,
+        "Id": 233,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110245463690177&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1580
+    },
+    {
+        "Name": "Diamond Ring",
+        "Tier": 5,
+        "Id": 236,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110991359455743&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3580
+    },
+    {
+        "Name": "Conch Shell",
+        "Tier": 2,
+        "Id": 237,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=139285110672806&type=Asset&size=420x420&format=Png",
+        "SellPrice": 72
+    },
+    {
+        "Name": "Megalodon",
+        "Tier": 7,
+        "Id": 226,
+        "Chance": 2.5e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=126066407227328&type=Asset&size=420x420&format=Png",
+        "SellPrice": 355000
+    },
+    {
+        "Name": "Arowana",
+        "Tier": 2,
+        "Id": 242,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=81593253309929&type=Asset&size=420x420&format=Png",
+        "SellPrice": 61
+    },
+    {
+        "Name": "King Mackerel",
+        "Tier": 3,
+        "Id": 241,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86941108969730&type=Asset&size=420x420&format=Png",
+        "SellPrice": 358
+    },
+    {
+        "Name": "Magma Shark",
+        "Tier": 6,
+        "Id": 240,
+        "Chance": 0.000005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=133485972581430&type=Asset&size=420x420&format=Png",
+        "SellPrice": 115500
+    },
+    {
+        "Name": "Ruby",
+        "Tier": 5,
+        "Id": 243,
+        "Chance": 0.00006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=91295888272023&type=Asset&size=420x420&format=Png",
+        "SellPrice": 13950
+    },
+    {
+        "Name": "Abyshorn Fish",
+        "Tier": 2,
+        "Id": 280,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79899223576801&type=Asset&size=420x420&format=Png",
+        "SellPrice": 63
+    },
+    {
+        "Name": "Sharp One",
+        "Tier": 6,
+        "Id": 247,
+        "Chance": 0.000009523809523809523,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=84629313345829&type=Asset&size=420x420&format=Png",
+        "SellPrice": 54000
+    },
+    {
+        "Name": "Hybodus Shark",
+        "Tier": 6,
+        "Id": 249,
+        "Chance": 0.000006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=97369977225977&type=Asset&size=420x420&format=Png",
+        "SellPrice": 63500
+    },
+    {
+        "Name": "Panther Eel",
+        "Tier": 6,
+        "Id": 248,
+        "Chance": 0.0000013333333333333335,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101328665301159&type=Asset&size=420x420&format=Png",
+        "SellPrice": 151500
+    },
+    {
+        "Name": "Ghost Shark",
+        "Tier": 7,
+        "Id": 83,
+        "Chance": 0.000002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=102028503382077&type=Asset&size=420x420&format=Png",
+        "SellPrice": 125000
+    },
+    {
+        "Name": "Ghost Worm Fish",
+        "Tier": 7,
+        "Id": 176,
+        "Chance": 0.000001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=107896897205452&type=Asset&size=420x420&format=Png",
+        "SellPrice": 195000
+    },
+    {
+        "Name": "Crescent Artifact",
+        "Tier": 4,
+        "Id": 266,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101671391342007&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Diamond Artifact",
+        "Tier": 4,
+        "Id": 267,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72233825405890&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Hourglass Diamond Artifact",
+        "Tier": 4,
+        "Id": 271,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=102092265321663&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Arrow Artifact",
+        "Tier": 4,
+        "Id": 265,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=71938301181096&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Zebra Snakehead",
+        "Tier": 2,
+        "Id": 287,
+        "Chance": 0.006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122319387402990&type=Asset&size=420x420&format=Png",
+        "SellPrice": 164
+    },
+    {
+        "Name": "Waveback Fish",
+        "Tier": 1,
+        "Id": 281,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=96051341080933&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Crocodile",
+        "Tier": 6,
+        "Id": 263,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=89886287478220&type=Asset&size=420x420&format=Png",
+        "SellPrice": 29500
+    },
+    {
+        "Name": "Viperangler Fish",
+        "Tier": 3,
+        "Id": 278,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=134552782408906&type=Asset&size=420x420&format=Png",
+        "SellPrice": 430
+    },
+    {
+        "Name": "Temple Spokes Tuna",
+        "Tier": 5,
+        "Id": 286,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85353973924965&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4730
+    },
+    {
+        "Name": "Spear Guardian",
+        "Tier": 4,
+        "Id": 276,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=98723587624430&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1150
+    },
+    {
+        "Name": "Skeleton Angler Fish",
+        "Tier": 4,
+        "Id": 268,
+        "Chance": 0.0003333333333333333,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72285613528111&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2750
+    },
+    {
+        "Name": "Sail Fish",
+        "Tier": 2,
+        "Id": 275,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86952015220017&type=Asset&size=420x420&format=Png",
+        "SellPrice": 59
+    },
+    {
+        "Name": "Sacred Guardian Squid",
+        "Tier": 5,
+        "Id": 283,
+        "Chance": 0.000022222222222222224,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129358445149074&type=Asset&size=420x420&format=Png",
+        "SellPrice": 28500
+    },
+    {
+        "Name": "Runic Wispeye",
+        "Tier": 1,
+        "Id": 279,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=97194596437636&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Red Goatfish",
+        "Tier": 2,
+        "Id": 285,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=87364367503847&type=Asset&size=420x420&format=Png",
+        "SellPrice": 145
+    },
+    {
+        "Name": "Parrot Fish",
+        "Tier": 3,
+        "Id": 282,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=90145730610071&type=Asset&size=420x420&format=Png",
+        "SellPrice": 440
+    },
+    {
+        "Name": "Mossy Fishlet",
+        "Tier": 3,
+        "Id": 277,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138560606706748&type=Asset&size=420x420&format=Png",
+        "SellPrice": 430
+    },
+    {
+        "Name": "Ancient Arapaima",
+        "Tier": 2,
+        "Id": 262,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=83287284251523&type=Asset&size=420x420&format=Png",
+        "SellPrice": 64
+    },
+    {
+        "Name": "Manoai Statue Fish",
+        "Tier": 5,
+        "Id": 274,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=112056031966357&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4700
+    },
+    {
+        "Name": "Mammoth Appafish",
+        "Tier": 6,
+        "Id": 273,
+        "Chance": 0.000006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=113683047681103&type=Asset&size=420x420&format=Png",
+        "SellPrice": 66000
+    },
+    {
+        "Name": "Goliath Tiger",
+        "Tier": 4,
+        "Id": 270,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=79451780989889&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1380
+    },
+    {
+        "Name": "Ancient Lochness Monster",
+        "Tier": 7,
+        "Id": 345,
+        "Chance": 3.3333333333333337e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122849883484708&type=Asset&size=420x420&format=Png",
+        "SellPrice": 100000
+    },
+    {
+        "Name": "Drippy Tucanare",
+        "Tier": 2,
+        "Id": 288,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=88963984435830&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "King Jelly",
+        "Tier": 7,
+        "Id": 292,
+        "Chance": 6.666666666666667e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=104757933481327&type=Asset&size=420x420&format=Png",
+        "SellPrice": 225000
+    },
+    {
+        "Name": "Beanie Leedsicheye",
+        "Tier": 1,
+        "Id": 290,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85346893566616&type=Asset&size=420x420&format=Png",
+        "SellPrice": 19
+    },
+    {
+        "Name": "Ancient Relic Crocodile",
+        "Tier": 6,
+        "Id": 264,
+        "Chance": 0.000004081632653061224,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=131025252592514&type=Asset&size=420x420&format=Png",
+        "SellPrice": 98000
+    },
+    {
+        "Name": "Bone Whale",
+        "Tier": 7,
+        "Id": 293,
+        "Chance": 5e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=99804145194043&type=Asset&size=420x420&format=Png",
+        "SellPrice": 255000
+    },
+    {
+        "Name": "Mosasaur Shark",
+        "Tier": 7,
+        "Id": 272,
+        "Chance": 0.00000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=119021943786069&type=Asset&size=420x420&format=Png",
+        "SellPrice": 180000
+    },
+    {
+        "Name": "Elshark Gran Maja",
+        "Tier": 7,
+        "Id": 269,
+        "Chance": 2.5e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115522161459382&type=Asset&size=420x420&format=Png",
+        "SellPrice": 440000
+    },
+    {
+        "Name": "Water Snake",
+        "Tier": 2,
+        "Id": 289,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118434158055629&type=Asset&size=420x420&format=Png",
+        "SellPrice": 61
+    },
+    {
+        "Name": "Ancient Whale",
+        "Tier": 7,
+        "Id": 295,
+        "Chance": 3.6363636363636368e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=106712272327597&type=Asset&size=420x420&format=Png",
+        "SellPrice": 270000
+    },
+    {
+        "Name": "Crystal Salamander",
+        "Tier": 5,
+        "Id": 296,
+        "Chance": 0.00016666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129118256536866&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4325
+    },
+    {
+        "Name": "Dead Scary Clownfish",
+        "Tier": 2,
+        "Id": 301,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=130326949380133&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Dead Spooky Koi Fish",
+        "Tier": 4,
+        "Id": 303,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=94754294966347&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1180
+    },
+    {
+        "Name": "Dead Zombie Shark",
+        "Tier": 7,
+        "Id": 302,
+        "Chance": 0.000002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=74502211632455&type=Asset&size=420x420&format=Png",
+        "SellPrice": 66000
+    },
+    {
+        "Name": "Pumpkin Jellyfish",
+        "Tier": 5,
+        "Id": 299,
+        "Chance": 0.0001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110367503006917&type=Asset&size=420x420&format=Png",
+        "SellPrice": 9800
+    },
+    {
+        "Name": "Scary Clownfish",
+        "Tier": 2,
+        "Id": 300,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118734586270295&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Spooky Koi Fish",
+        "Tier": 4,
+        "Id": 298,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=71760590403389&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1180
+    },
+    {
+        "Name": "Toxic Jellyfish",
+        "Tier": 4,
+        "Id": 304,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128554473363426&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2138
+    },
+    {
+        "Name": "Zombie Shark",
+        "Tier": 7,
+        "Id": 297,
+        "Chance": 0.000004,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118840558184490&type=Asset&size=420x420&format=Png",
+        "SellPrice": 66000
+    },
+    {
+        "Name": "Baby Pumpkin Shark",
+        "Tier": 3,
+        "Id": 310,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=92277291116292&type=Asset&size=420x420&format=Png",
+        "SellPrice": 435
+    },
+    {
+        "Name": "Dark Pumpkin Appafish",
+        "Tier": 6,
+        "Id": 316,
+        "Chance": 0.00001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128070497580785&type=Asset&size=420x420&format=Png",
+        "SellPrice": 54000
+    },
+    {
+        "Name": "Frankenstein Longsnapper",
+        "Tier": 6,
+        "Id": 308,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=82325364028304&type=Asset&size=420x420&format=Png",
+        "SellPrice": 29500
+    },
+    {
+        "Name": "Ghost Spiralfish",
+        "Tier": 2,
+        "Id": 313,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=131024392032651&type=Asset&size=420x420&format=Png",
+        "SellPrice": 68
+    },
+    {
+        "Name": "Mossy Vampire Fish",
+        "Tier": 1,
+        "Id": 315,
+        "Chance": 0.25,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=123289074389407&type=Asset&size=420x420&format=Png",
+        "SellPrice": 22
+    },
+    {
+        "Name": "Pumpkin Angler Fish",
+        "Tier": 4,
+        "Id": 309,
+        "Chance": 0.0006666666666666666,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=123751784377518&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1980
+    },
+    {
+        "Name": "Pumpkin Butterfly Fish",
+        "Tier": 2,
+        "Id": 312,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129107539280642&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Pumpkin Carved Shark",
+        "Tier": 5,
+        "Id": 307,
+        "Chance": 0.0001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=112304908829218&type=Asset&size=420x420&format=Png",
+        "SellPrice": 10250
+    },
+    {
+        "Name": "Pumpkin Hermit Crab",
+        "Tier": 3,
+        "Id": 305,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128748768092216&type=Asset&size=420x420&format=Png",
+        "SellPrice": 385
+    },
+    {
+        "Name": "Pumpkin Ray",
+        "Tier": 6,
+        "Id": 314,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=103346973064613&type=Asset&size=420x420&format=Png",
+        "SellPrice": 27600
+    },
+    {
+        "Name": "Pumpkin StoneTurtle",
+        "Tier": 5,
+        "Id": 317,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=119502983826514&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3900
+    },
+    {
+        "Name": "Spooky Peafish",
+        "Tier": 1,
+        "Id": 318,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=126789494167977&type=Asset&size=420x420&format=Png",
+        "SellPrice": 18
+    },
+    {
+        "Name": "Witch Fish",
+        "Tier": 2,
+        "Id": 306,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72770544702627&type=Asset&size=420x420&format=Png",
+        "SellPrice": 61
+    },
+    {
+        "Name": "Wizard Stingray",
+        "Tier": 5,
+        "Id": 311,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=102291521716919&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4600
+    },
+    {
+        "Name": "Zombie Megalodon",
+        "Tier": 7,
+        "Id": 319,
+        "Chance": 2.5e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110861329686146&type=Asset&size=420x420&format=Png",
+        "SellPrice": 375000
+    },
+    {
+        "Name": "Candy Corn Eel",
+        "Tier": 2,
+        "Id": 333,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=93259170550129&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Ghastly Crab",
+        "Tier": 5,
+        "Id": 334,
+        "Chance": 0.0001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76282468756263&type=Asset&size=420x420&format=Png",
+        "SellPrice": 11111
+    },
+    {
+        "Name": "Ghastly Hermit Crab",
+        "Tier": 5,
+        "Id": 338,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137125780150376&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4266
+    },
+    {
+        "Name": "Hammerhead Mummy",
+        "Tier": 6,
+        "Id": 336,
+        "Chance": 0.000004081632653061224,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115062339542534&type=Asset&size=420x420&format=Png",
+        "SellPrice": 100000
+    },
+    {
+        "Name": "Bloodmoon Whale",
+        "Tier": 7,
+        "Id": 342,
+        "Chance": 2e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=113886190969614&type=Asset&size=420x420&format=Png",
+        "SellPrice": 540000
+    },
+    {
+        "Name": "Talon Serpent",
+        "Tier": 7,
+        "Id": 341,
+        "Chance": 0.000001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108665275325646&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Wild Serpent",
+        "Tier": 7,
+        "Id": 340,
+        "Chance": 0.000001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=105102846577855&type=Asset&size=420x420&format=Png",
+        "SellPrice": 0
+    },
+    {
+        "Name": "Witch Koi Fish",
+        "Tier": 3,
+        "Id": 335,
+        "Chance": 0.002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=121441191255890&type=Asset&size=420x420&format=Png",
+        "SellPrice": 575
+    },
+    {
+        "Name": "Wraithfin Abyssal",
+        "Tier": 4,
+        "Id": 337,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=127594101212560&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1125
+    },
+    {
+        "Name": "Skeleton Narwhal",
+        "Tier": 7,
+        "Id": 339,
+        "Chance": 0.0000016666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=72248976760148&type=Asset&size=420x420&format=Png",
+        "SellPrice": 135000
+    },
+    {
+        "Name": "Wing Parrotfish",
+        "Tier": 2,
+        "Id": 378,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=124783376175888&type=Asset&size=420x420&format=Png",
+        "SellPrice": 85
+    },
+    {
+        "Name": "Traffic Cone Fish",
+        "Tier": 3,
+        "Id": 377,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=113998108351187&type=Asset&size=420x420&format=Png",
+        "SellPrice": 495
+    },
+    {
+        "Name": "Toothy Fish",
+        "Tier": 3,
+        "Id": 376,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136937049057582&type=Asset&size=420x420&format=Png",
+        "SellPrice": 520
+    },
+    {
+        "Name": "Thinkler Fish",
+        "Tier": 2,
+        "Id": 375,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=109016567709360&type=Asset&size=420x420&format=Png",
+        "SellPrice": 82
+    },
+    {
+        "Name": "Sona Fin Fish",
+        "Tier": 1,
+        "Id": 374,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=123007215107239&type=Asset&size=420x420&format=Png",
+        "SellPrice": 28
+    },
+    {
+        "Name": "Sea Crustacean",
+        "Tier": 6,
+        "Id": 373,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115338077693444&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65000
+    },
+    {
+        "Name": "Runic Squid",
+        "Tier": 6,
+        "Id": 372,
+        "Chance": 0.000011111111111111112,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=76096764311236&type=Asset&size=420x420&format=Png",
+        "SellPrice": 114000
+    },
+    {
+        "Name": "Runic Sea Crustacean",
+        "Tier": 6,
+        "Id": 371,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=78787372617743&type=Asset&size=420x420&format=Png",
+        "SellPrice": 78000
+    },
+    {
+        "Name": "Runic Lobster",
+        "Tier": 5,
+        "Id": 370,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=75142053727355&type=Asset&size=420x420&format=Png",
+        "SellPrice": 6000
+    },
+    {
+        "Name": "Runic Axolotl",
+        "Tier": 5,
+        "Id": 369,
+        "Chance": 0.0001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=77334109072314&type=Asset&size=420x420&format=Png",
+        "SellPrice": 9600
+    },
+    {
+        "Name": "Purp Blisfish",
+        "Tier": 1,
+        "Id": 368,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=119189756405143&type=Asset&size=420x420&format=Png",
+        "SellPrice": 73
+    },
+    {
+        "Name": "Primordial Octopus",
+        "Tier": 6,
+        "Id": 367,
+        "Chance": 0.000006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=102375471622278&type=Asset&size=420x420&format=Png",
+        "SellPrice": 105000
+    },
+    {
+        "Name": "Primal Lobster",
+        "Tier": 5,
+        "Id": 366,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=134352063604414&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5000
+    },
+    {
+        "Name": "Primal Axolotl",
+        "Tier": 5,
+        "Id": 365,
+        "Chance": 0.0001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=127892490832450&type=Asset&size=420x420&format=Png",
+        "SellPrice": 8000
+    },
+    {
+        "Name": "Pirate Blue Lobster",
+        "Tier": 3,
+        "Id": 364,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136311954875874&type=Asset&size=420x420&format=Png",
+        "SellPrice": 500
+    },
+    {
+        "Name": "Night Glider Fish",
+        "Tier": 1,
+        "Id": 363,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=93808950497100&type=Asset&size=420x420&format=Png",
+        "SellPrice": 28
+    },
+    {
+        "Name": "Lunar Crescent Fish",
+        "Tier": 3,
+        "Id": 362,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=100769354091343&type=Asset&size=420x420&format=Png",
+        "SellPrice": 490
+    },
+    {
+        "Name": "Liar Nose Fish",
+        "Tier": 3,
+        "Id": 361,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122543032863960&type=Asset&size=420x420&format=Png",
+        "SellPrice": 490
+    },
+    {
+        "Name": "1x1x1x1 Shark",
+        "Tier": 7,
+        "Id": 445,
+        "Chance": 4e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=126602140465429&type=Asset&size=420x420&format=Png",
+        "SellPrice": 150000
+    },
+    {
+        "Name": "Gladiator Shark",
+        "Tier": 7,
+        "Id": 359,
+        "Chance": 0.000001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=131785277053113&type=Asset&size=420x420&format=Png",
+        "SellPrice": 190000
+    },
+    {
+        "Name": "Foxtrot Koanfish",
+        "Tier": 2,
+        "Id": 358,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115020830553781&type=Asset&size=420x420&format=Png",
+        "SellPrice": 87
+    },
+    {
+        "Name": "Fossilized Shark",
+        "Tier": 6,
+        "Id": 357,
+        "Chance": 0.00001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=95113752323029&type=Asset&size=420x420&format=Png",
+        "SellPrice": 94000
+    },
+    {
+        "Name": "Flying Manta",
+        "Tier": 5,
+        "Id": 356,
+        "Chance": 0.00006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=89252022082531&type=Asset&size=420x420&format=Png",
+        "SellPrice": 15000
+    },
+    {
+        "Name": "Flatheaded Whale Shark",
+        "Tier": 6,
+        "Id": 355,
+        "Chance": 0.000005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=73809550216371&type=Asset&size=420x420&format=Png",
+        "SellPrice": 140000
+    },
+    {
+        "Name": "Doober Fish",
+        "Tier": 2,
+        "Id": 354,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=104826665812171&type=Asset&size=420x420&format=Png",
+        "SellPrice": 93
+    },
+    {
+        "Name": "Dogfish",
+        "Tier": 4,
+        "Id": 353,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=124798847622372&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3333
+    },
+    {
+        "Name": "Cavern Dweller",
+        "Tier": 6,
+        "Id": 352,
+        "Chance": 0.000008333333333333334,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110427632040144&type=Asset&size=420x420&format=Png",
+        "SellPrice": 135000
+    },
+    {
+        "Name": "Boney Eel",
+        "Tier": 3,
+        "Id": 351,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85394749821305&type=Asset&size=420x420&format=Png",
+        "SellPrice": 450
+    },
+    {
+        "Name": "Blobby Shieldfish",
+        "Tier": 4,
+        "Id": 350,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=78472043782085&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1600
+    },
+    {
+        "Name": "Baby Shrimp",
+        "Tier": 2,
+        "Id": 349,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=100664684321181&type=Asset&size=420x420&format=Png",
+        "SellPrice": 79
+    },
+    {
+        "Name": "Angrylion Fish",
+        "Tier": 4,
+        "Id": 348,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=135099762730215&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3330
+    },
+    {
+        "Name": "Ancient Squid",
+        "Tier": 6,
+        "Id": 347,
+        "Chance": 0.000011111111111111112,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=103962641004338&type=Asset&size=420x420&format=Png",
+        "SellPrice": 95000
+    },
+    {
+        "Name": "Ancient Pufferfish",
+        "Tier": 5,
+        "Id": 346,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=94080226439959&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4500
+    },
+    {
+        "Name": "Freshwater Piranha",
+        "Tier": 3,
+        "Id": 284,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=133381366802339&type=Asset&size=420x420&format=Png",
+        "SellPrice": 410
+    },
+    {
+        "Name": "Plasma Serpent",
+        "Tier": 6,
+        "Id": 380,
+        "Chance": 0.000004444444444444444,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=129918689550932&type=Asset&size=420x420&format=Png",
+        "SellPrice": 98000
+    },
+    {
+        "Name": "Cryoshade Glider",
+        "Tier": 7,
+        "Id": 379,
+        "Chance": 0.000002222222222222222,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=107008051913908&type=Asset&size=420x420&format=Png",
+        "SellPrice": 120000
+    },
+    {
+        "Name": "Starlight Manta Ray",
+        "Tier": 6,
+        "Id": 381,
+        "Chance": 0.0000125,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=132585714096538&type=Asset&size=420x420&format=Png",
+        "SellPrice": 33000
+    },
+    {
+        "Name": "Starlight Crab",
+        "Tier": 4,
+        "Id": 383,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=116185409462303&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Parrot Blopfish",
+        "Tier": 3,
+        "Id": 385,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118232728651933&type=Asset&size=420x420&format=Png",
+        "SellPrice": 410
+    },
+    {
+        "Name": "Green Gillfish",
+        "Tier": 2,
+        "Id": 391,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138551053618250&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Cypress Ratua",
+        "Tier": 2,
+        "Id": 390,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120326003916500&type=Asset&size=420x420&format=Png",
+        "SellPrice": 65
+    },
+    {
+        "Name": "Fish Fossil",
+        "Tier": 5,
+        "Id": 389,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137098484897071&type=Asset&size=420x420&format=Png",
+        "SellPrice": 3580
+    },
+    {
+        "Name": "Glacierfin Snapper",
+        "Tier": 2,
+        "Id": 388,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122228140520012&type=Asset&size=420x420&format=Png",
+        "SellPrice": 120
+    },
+    {
+        "Name": "Curious Garfish",
+        "Tier": 2,
+        "Id": 387,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=110265016364630&type=Asset&size=420x420&format=Png",
+        "SellPrice": 68
+    },
+    {
+        "Name": "Iron Domefin",
+        "Tier": 4,
+        "Id": 386,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118826363919078&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1150
+    },
+    {
+        "Name": "Cute Octopus",
+        "Tier": 3,
+        "Id": 382,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101240566251348&type=Asset&size=420x420&format=Png",
+        "SellPrice": 402
+    },
+    {
+        "Name": "Freshwater Piranha",
+        "Tier": 3,
+        "Id": 384,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=138330943047773&type=Asset&size=420x420&format=Png",
+        "SellPrice": 410
+    },
+    {
+        "Name": "Coral",
+        "Tier": 1,
+        "Id": 392,
+        "Chance": 0.16666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=96235449127344&type=Asset&size=420x420&format=Png",
+        "SellPrice": 25
+    },
+    {
+        "Name": "Boltback Fish",
+        "Tier": 2,
+        "Id": 395,
+        "Chance": 0.01,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=87304583998131&type=Asset&size=420x420&format=Png",
+        "SellPrice": 115
+    },
+    {
+        "Name": "Sophisticated Angler",
+        "Tier": 2,
+        "Id": 393,
+        "Chance": 0.014285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=96450948294793&type=Asset&size=420x420&format=Png",
+        "SellPrice": 84
+    },
+    {
+        "Name": "Smarty Mcfish",
+        "Tier": 2,
+        "Id": 394,
+        "Chance": 0.014285714285714286,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=94221709472146&type=Asset&size=420x420&format=Png",
+        "SellPrice": 82
+    },
+    {
+        "Name": "Yellow Spinefin",
+        "Tier": 2,
+        "Id": 405,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=140293601164118&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "ElRetro Gran Maja",
+        "Tier": 7,
+        "Id": 427,
+        "Chance": 2.5e-7,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=87213487175221&type=Asset&size=420x420&format=Png",
+        "SellPrice": 360000
+    },
+    {
+        "Name": "Violet Divafish",
+        "Tier": 1,
+        "Id": 407,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122211520622139&type=Asset&size=420x420&format=Png",
+        "SellPrice": 20
+    },
+    {
+        "Name": "Turqoi Backfin",
+        "Tier": 2,
+        "Id": 408,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=106185428761933&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Tree Frog",
+        "Tier": 3,
+        "Id": 409,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=80655916696311&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Trav Grupper",
+        "Tier": 5,
+        "Id": 410,
+        "Chance": 0.00006666666666666667,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=111686486825787&type=Asset&size=420x420&format=Png",
+        "SellPrice": 15000
+    },
+    {
+        "Name": "Studded Jellyfish",
+        "Tier": 5,
+        "Id": 411,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137910385069866&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    },
+    {
+        "Name": "Studded Dolphin",
+        "Tier": 4,
+        "Id": 412,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=118480628740391&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Steelfin Marlin",
+        "Tier": 3,
+        "Id": 413,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=74650607758460&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Starry Night Shark",
+        "Tier": 6,
+        "Id": 414,
+        "Chance": 0.00002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=85086243829526&type=Asset&size=420x420&format=Png",
+        "SellPrice": 75000
+    },
+    {
+        "Name": "Shedletsky Guppy",
+        "Tier": 4,
+        "Id": 415,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101611169865190&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Retro Crocodile",
+        "Tier": 5,
+        "Id": 446,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86938160716648&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    },
+    {
+        "Name": "Purple Razorback",
+        "Tier": 2,
+        "Id": 416,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=124695608237391&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Lumina Stinger",
+        "Tier": 5,
+        "Id": 417,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=104139252072812&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    },
+    {
+        "Name": "Leaf Fin",
+        "Tier": 1,
+        "Id": 418,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=140112807282792&type=Asset&size=420x420&format=Png",
+        "SellPrice": 20
+    },
+    {
+        "Name": "Lady Luminelle",
+        "Tier": 2,
+        "Id": 419,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=122152368670912&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Happy Sunfish",
+        "Tier": 2,
+        "Id": 420,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=70479460586644&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Gumball Whale",
+        "Tier": 3,
+        "Id": 421,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=120585557484652&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Guest Guppy",
+        "Tier": 3,
+        "Id": 422,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108835728416359&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Grumpy Angler",
+        "Tier": 3,
+        "Id": 423,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=111356644977460&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Frostbreaker Whale",
+        "Tier": 6,
+        "Id": 424,
+        "Chance": 0.000005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136615659816850&type=Asset&size=420x420&format=Png",
+        "SellPrice": 145000
+    },
+    {
+        "Name": "Friendly Lobster",
+        "Tier": 4,
+        "Id": 425,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=137153575325442&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Enchanted Turtle",
+        "Tier": 4,
+        "Id": 426,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=100202738318932&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "King Frog",
+        "Tier": 4,
+        "Id": 360,
+        "Chance": 0.0003332222592469177,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=107539230294032&type=Asset&size=420x420&format=Png",
+        "SellPrice": 4000
+    },
+    {
+        "Name": "Disco Party Puffer",
+        "Tier": 4,
+        "Id": 428,
+        "Chance": 0.0005,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=81180761060405&type=Asset&size=420x420&format=Png",
+        "SellPrice": 2400
+    },
+    {
+        "Name": "Cousin Tentacles",
+        "Tier": 5,
+        "Id": 429,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=84052975001558&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    },
+    {
+        "Name": "Classic Goldfish",
+        "Tier": 1,
+        "Id": 430,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=101426127102104&type=Asset&size=420x420&format=Png",
+        "SellPrice": 20
+    },
+    {
+        "Name": "Classic Dorhey Tang",
+        "Tier": 2,
+        "Id": 431,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=108600494137652&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Classic Angler",
+        "Tier": 4,
+        "Id": 432,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=116353079150728&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Cantelope Puffer",
+        "Tier": 2,
+        "Id": 433,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136380956166771&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Builderman Guppy",
+        "Tier": 3,
+        "Id": 434,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=115945392034086&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Brighteyes Guppy",
+        "Tier": 4,
+        "Id": 435,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=84533446308508&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Boned Arrowhead Fish",
+        "Tier": 1,
+        "Id": 436,
+        "Chance": 0.5,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=123712872087272&type=Asset&size=420x420&format=Png",
+        "SellPrice": 20
+    },
+    {
+        "Name": "Blue Shell Crab",
+        "Tier": 5,
+        "Id": 437,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=97862084509972&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    },
+    {
+        "Name": "Blocky Octopus",
+        "Tier": 4,
+        "Id": 438,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=114941091584027&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Blockmine Fish",
+        "Tier": 2,
+        "Id": 439,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=136270282783680&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Block Fish",
+        "Tier": 4,
+        "Id": 440,
+        "Chance": 0.001,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=124410297821349&type=Asset&size=420x420&format=Png",
+        "SellPrice": 1100
+    },
+    {
+        "Name": "Beach Ball",
+        "Tier": 2,
+        "Id": 441,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=99523992488689&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Angry Rocky",
+        "Tier": 2,
+        "Id": 442,
+        "Chance": 0.02,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=86379985934607&type=Asset&size=420x420&format=Png",
+        "SellPrice": 55
+    },
+    {
+        "Name": "Ancient Crawler",
+        "Tier": 3,
+        "Id": 443,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=132304105842168&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Alienhead Squid",
+        "Tier": 3,
+        "Id": 444,
+        "Chance": 0.0033333333333333337,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=104195278889702&type=Asset&size=420x420&format=Png",
+        "SellPrice": 330
+    },
+    {
+        "Name": "Winged Seahorse",
+        "Tier": 5,
+        "Id": 406,
+        "Chance": 0.0002,
+        "Icon": "https://thumbnails.roblox.com/v1/assets?assetIds=128407329321611&type=Asset&size=420x420&format=Png",
+        "SellPrice": 5500
+    }
+]
